@@ -10,10 +10,13 @@ if(isset($_SESSION['id']))
     <head>
         <meta charset="utf-8">
         <title><?php echo CONFIG_SITE_NAME,' | ', CONNECTION; ?></title>
+        <?php require_once 'inc/head.php'; ?>
     </head>
     <body>
         <?php require_once 'inc/header.php'; ?>
+        <div class="content">
         <h1><?php echo CONNECTION; ?></h1>
+        <div class="form-box">
         <?php
         $form=true;
         if(isset($_POST['sign_in']))
@@ -66,5 +69,7 @@ if(isset($_SESSION['id']))
         <?php
         }
         ?>
+    </div>
+    </div>
     </body>
 </html>

@@ -1,4 +1,5 @@
 <header>
+    <nav class="menu">
     <a href="index.php"><?php echo ACCUEIL; ?></a>
     <?php
     if(isset($_SESSION['id']))
@@ -15,4 +16,5 @@
     <?php
     }
     ?>
+    </nav>
 </header>
